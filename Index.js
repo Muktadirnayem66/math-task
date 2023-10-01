@@ -1,57 +1,65 @@
-// math - 1
+//String All methods
 
-let num1 = 6
-let num2 = 6
-let num3 = 7
-let num4 = 10
 
-let addition = num1 + num2
-let sabtract = num4 - num3
+const single = 'single quotes'
+const double = "double quotes"
+const backtick = `backtick`
+// console.log(single, double, backtick);
 
-let finalresult = addition * sabtract
+const char = single.charAt(0).toUpperCase()
+// console.log(char);
 
-function CheckedValue(value) {
-    if(value%2 === 0){
-        return "wel done"
-    }else{
-        return "not right"
-    }
+const browserType = "mozila"
+if(browserType.includes("zila")){
+    //console.log("found Zila");
+}else{
+    //console.log("no zilla found");
 }
 
-let evenOddResult = CheckedValue(finalresult)
-console.log(evenOddResult);
+if(browserType.startsWith("zila")){
+    //console.log("start withzilla");
+}else{
+    //console.log("mozilla not found");
+}
+
+if(browserType.endsWith("zila")){
+    //console.log("ends with zila");
+}else{
+    //console.log("mozilla  not found");
+}
+
+const tagline = "MDN - Resources for developers, by developers";
+//console.log(tagline.indexOf("developers"));
+//console.log(tagline.indexOf("R"));
 
 
+//console.log(browserType.slice(1,4));
 
+//console.log(tagline.toLocaleLowerCase());
+//console.log(tagline.toUpperCase());
 
-//math 2
+const browserType1 = browserType.replace("moz","van")
 
-let result = 7 + 13 / 9 + 7;
-let result2 = 100 / 2 * 6;
+const str = "      The quick red fox jumped over the Lazy dog's back";
 
-result = result * result2
-let finalResult = result.toFixed(2)
-console.log(Number(finalResult));
+//const index = 4
+//console.log(`the character is the following index${index} and ${str.charAt(index)}`);
+//console.log(`the character is the following index${index} and ${str.charCodeAt(index)}`);
+//console.log(`the character is the following index${index} and ${str.codePointAt(index)}`);
+//console.log(str.concat("Every character"));
+//console.log(str.endsWith("back"));
+// const regex = /[A-Z]/g;
+// const found = str.match(regex);
+// console.log(found);
 
+// let last4digits = str.slice(-4)
+// console.log(last4digits);
 
-//Math 3
+// console.log(str.split(" "));
 
-// Statement 1: The elephant weighs less than the mouse
-const eleWeight = 100;
-const mouseWeight = 2;
-const weightComparison = eleWeight > mouseWeight
-console.log(weightComparison);
+// const mood = "Hello, world!";
+// console.log(mood.repeat(3));
 
-
-// Statement 2: The Ostrich is taller than the duck
-const ostrichHeight = 2;
-const duckHeight = 0.3;
-const heightComparison = ostrichHeight > duckHeight
-console.log(heightComparison);
-
-// Statement 3: The two passwords match
-const pass1 = 'stromboli';
-const pass2 = 'stROmBoLi';
-
-const pwdMatch = pass1 === pass2;
-console.log(pwdMatch);
+//console.log(str.replace('dog', 'monkey'));
+//console.log(str.search("dog"));
+//console.log(str.trim());
